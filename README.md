@@ -7,7 +7,7 @@ _Click the `Release` tab to download pre-compiled `.hex` files_
 ## Current fork : small mod for Eleksmaker Laser and Pen ##
 The current fork is the config I use to drive my [Eleksmaker A3 Pro](https://wiki.eleksmaker.com/doku.php?id=elekslasera3pro) with [LaserGRBL](https://lasergrbl.com/)
 
-## Switching from Laser to servo mode ##
+## Switching from Laser to Pen servo mode ##
 *Caution :* On 'Eleksmaker A3' pin D11 is shared between Laser and pen. Don't switch toolhead with power on.
 1. Power off the machine
 2. unplug the toolhead
