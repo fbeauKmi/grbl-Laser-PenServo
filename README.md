@@ -23,7 +23,7 @@ Console show you the current mode :
 ## Gcode ##
  Both Laser and Pen respond to M3 M4 M5 command
  
-
+***
  
 Grbl is a no-compromise, high performance, low cost alternative to parallel-port-based motion control for CNC milling. This version of Grbl runs on an Arduino with a 328p processor (Uno, Duemilanove, Nano, Micro, etc).
 
