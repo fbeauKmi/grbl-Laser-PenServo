@@ -3,6 +3,28 @@
 ***
 _Click the `Release` tab to download pre-compiled `.hex` files or just [click here](https://github.com/gnea/grbl/releases)_
 ***
+
+## Current fork : small mod for Eleksmaker Laser and Pen ##
+The current fork is the config I use to drive my [Eleksmaker A3 Pro](https://wiki.eleksmaker.com/doku.php?id=elekslasera3pro) with [LaserGRBL](https://lasergrbl.com/)
+
+## Switching from Laser to servo mode ##
+*Caution :* On 'Eleksmaker A3' pin D11 is shared between Laser and pen. Don't switch toolhead with power on.
+1. Power off the machine
+2. unplug the toolhead
+3. Power on and connect the machine
+Console show you the current mode :  
+ `Grbl 1.1h Laser` for Laser mode,
+ `Grbl 1.1h Pen` for pen mode.
+4. Set mode use `$32` parameter, `$32=1` for laser, `$32=0` for pen
+5. Power off your machine
+6. Plug the toolhead according the above setting
+7. Start your machine
+
+## Gcode ##
+ Both Laser and Pen respond to M3 M4 M5 command
+ 
+
+ 
 Grbl is a no-compromise, high performance, low cost alternative to parallel-port-based motion control for CNC milling. This version of Grbl runs on an Arduino with a 328p processor (Uno, Duemilanove, Nano, Micro, etc).
 
 The controller is written in highly optimized C utilizing every clever feature of the AVR-chips to achieve precise timing and asynchronous operation. It is able to maintain up to 30kHz of stable, jitter free control pulses.
